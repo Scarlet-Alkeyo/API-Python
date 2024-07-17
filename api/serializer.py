@@ -1,11 +1,12 @@
 
 from rest_framework import serializers
+from classperiod.models import ClassPeriod
+from classroom.models import Classroom
 from student.models import Student
-from classperiod.models import Classperiod
 from course.models import Course
 from teacher.models import Teacher
-from classroom.models import classroom
 from rest_framework import serializers
+
 class StudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Student
